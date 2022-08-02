@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "RNContainer.app"
+               BlueprintIdentifier = "099E7211289912AC0062CC2B"
+               BuildableName = "RNContainer.framework"
                BlueprintName = "RNContainer"
                ReferencedContainer = "container:RNContainer.xcodeproj">
             </BuildableReference>
@@ -54,8 +54,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNContainer.app"
+            BlueprintIdentifier = "099E7211289912AC0062CC2B"
+            BuildableName = "RNContainer.framework"
             BlueprintName = "RNContainer"
             ReferencedContainer = "container:RNContainer.xcodeproj">
          </BuildableReference>
@@ -71,8 +71,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNContainer.app"
+            BlueprintIdentifier = "099E7211289912AC0062CC2B"
+            BuildableName = "RNContainer.framework"
             BlueprintName = "RNContainer"
             ReferencedContainer = "container:RNContainer.xcodeproj">
          </BuildableReference>
