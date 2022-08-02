@@ -12,6 +12,7 @@
 		099E72242899180E0062CC2B /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721C2899180E0062CC2B /* ReactNativeViewController.h */; };
 		099E72262899180E0062CC2B /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721E2899180E0062CC2B /* ReactNativeViewController.m */; };
 		099E72272899180E0062CC2B /* ReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721F2899180E0062CC2B /* ReactNativeBridge.m */; };
+		D6F58AAA71DC43ECF73A860A /* libPods-RNContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F58AAA71DC43ECF73A860A /* libPods-RNContainer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 099E7216289912AC0062CC2B /* Build configuration list for PBXNativeTarget "RNContainer" */;
 			buildPhases = (
+				9CAC4918C3238F32C7117EC5 /* [CP] Check Pods Manifest.lock */,
 				099E720D289912AC0062CC2B /* Headers */,
 				099E720E289912AC0062CC2B /* Sources */,
 				099E720F289912AC0062CC2B /* Frameworks */,
 				099E7210289912AC0062CC2B /* Resources */,
+				06767B5F6FCD802F128E1EE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06767B5F6FCD802F128E1EE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNContainer/Pods-RNContainer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNContainer/Pods-RNContainer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNContainer/Pods-RNContainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAC4918C3238F32C7117EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNContainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		099E720E289912AC0062CC2B /* Sources */ = {
@@ -256,7 +302,7 @@
 		};
 		099E7218289912AC0062CC2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 099E722A28991A550062CC2B /* Project-Release.xcconfig */;
+			baseConfigurationReference = 099E722D28991A550062CC2B /* RNContainer-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ANALYZER_NONNULL = YES;

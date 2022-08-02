@@ -7,7 +7,6 @@
 
 #include "Pods/Target Support Files/Pods-RNContainer/Pods-RNContainer.release.xcconfig"
 
-
 CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
 CODE_SIGN_IDENTITY =
 DEFINES_MODULE = YES
