@@ -351,6 +351,7 @@ PODS:
     - React-logger (= 0.69.3)
     - React-perflogger (= 0.69.3)
   - SocketRocket (0.6.0)
+  - xcbeautify (0.13.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -411,6 +412,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - xcbeautify
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -429,6 +431,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - xcbeautify
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -543,9 +546,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 607eb048e22a16388c908ee1f6644200e8d1e19b
   ReactCommon: af7636436b382db7cde4583bbd642f0978e6e3ed
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  xcbeautify: 663b4c0c6e1ba22b5dfaf9382202473d3bd52046
   Yoga: 44c64131616253fa83366295acdbce3d14926041
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 7337a08c04946c8fea5586c68a5c6f2497e27669
+PODFILE CHECKSUM: 1b4c85e4061214d3aa4e903d1d536415657fb15a
 
 COCOAPODS: 1.11.3
