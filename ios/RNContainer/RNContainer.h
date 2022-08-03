@@ -14,3 +14,5 @@ FOUNDATION_EXPORT double RNContainerVersionNumber;
 FOUNDATION_EXPORT const unsigned char RNContainerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RNContainer/PublicHeader.h>
+#import <RNContainer/ReactNativeBridge.h>
+#import <RNContainer/ReactNativeViewController.h>

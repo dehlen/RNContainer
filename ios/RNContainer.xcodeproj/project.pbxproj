@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093C6B45289AB3D7005B3C06 /* ReactNativeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B43289AB3D7005B3C06 /* ReactNativeBridge.swift */; };
-		093C6B46289AB3D7005B3C06 /* ReactNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B44289AB3D7005B3C06 /* ReactNativeViewController.swift */; };
+		093C6B48289AB54C005B3C06 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 093C6B47289AB549005B3C06 /* main.jsbundle */; };
+		093C6B53289ABC10005B3C06 /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 093C6B4F289ABC10005B3C06 /* ReactNativeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093C6B54289ABC10005B3C06 /* ReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B50289ABC10005B3C06 /* ReactNativeBridge.m */; };
+		093C6B55289ABC10005B3C06 /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B51289ABC10005B3C06 /* ReactNativeViewController.m */; };
+		093C6B56289ABC10005B3C06 /* ReactNativeBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 093C6B52289ABC10005B3C06 /* ReactNativeBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093C6B59289ABD59005B3C06 /* ReactNativeBridgeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B57289ABD58005B3C06 /* ReactNativeBridgeDelegate.m */; };
+		093C6B5A289ABD59005B3C06 /* ReactNativeBridgeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 093C6B58289ABD58005B3C06 /* ReactNativeBridgeDelegate.h */; };
 		099E7215289912AC0062CC2B /* RNContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E7214289912AC0062CC2B /* RNContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F58AAA71DC43ECF73A860A /* libPods-RNContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		093C6B43289AB3D7005B3C06 /* ReactNativeBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactNativeBridge.swift; sourceTree = "<group>"; };
-		093C6B44289AB3D7005B3C06 /* ReactNativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactNativeViewController.swift; sourceTree = "<group>"; };
+		093C6B47289AB549005B3C06 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.jsbundle; sourceTree = "<group>"; };
+		093C6B4F289ABC10005B3C06 /* ReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
+		093C6B50289ABC10005B3C06 /* ReactNativeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeBridge.m; sourceTree = "<group>"; };
+		093C6B51289ABC10005B3C06 /* ReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
+		093C6B52289ABC10005B3C06 /* ReactNativeBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeBridge.h; sourceTree = "<group>"; };
+		093C6B57289ABD58005B3C06 /* ReactNativeBridgeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeBridgeDelegate.m; sourceTree = "<group>"; };
+		093C6B58289ABD58005B3C06 /* ReactNativeBridgeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeBridgeDelegate.h; sourceTree = "<group>"; };
 		099E7212289912AC0062CC2B /* RNContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		099E7214289912AC0062CC2B /* RNContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNContainer.h; sourceTree = "<group>"; };
 		099E722A28991A550062CC2B /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
@@ -48,8 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				099E7214289912AC0062CC2B /* RNContainer.h */,
-				093C6B43289AB3D7005B3C06 /* ReactNativeBridge.swift */,
-				093C6B44289AB3D7005B3C06 /* ReactNativeViewController.swift */,
+				093C6B52289ABC10005B3C06 /* ReactNativeBridge.h */,
+				093C6B50289ABC10005B3C06 /* ReactNativeBridge.m */,
+				093C6B58289ABD58005B3C06 /* ReactNativeBridgeDelegate.h */,
+				093C6B57289ABD58005B3C06 /* ReactNativeBridgeDelegate.m */,
+				093C6B4F289ABC10005B3C06 /* ReactNativeViewController.h */,
+				093C6B51289ABC10005B3C06 /* ReactNativeViewController.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 			);
 			path = RNContainer;
@@ -86,6 +100,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				093C6B47289AB549005B3C06 /* main.jsbundle */,
 				099E722928991A550062CC2B /* Config */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				099E7213289912AC0062CC2B /* RNContainer */,
@@ -124,6 +139,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093C6B56289ABC10005B3C06 /* ReactNativeBridge.h in Headers */,
+				093C6B53289ABC10005B3C06 /* ReactNativeViewController.h in Headers */,
+				093C6B5A289ABD59005B3C06 /* ReactNativeBridgeDelegate.h in Headers */,
 				099E7215289912AC0062CC2B /* RNContainer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093C6B48289AB54C005B3C06 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093C6B45289AB3D7005B3C06 /* ReactNativeBridge.swift in Sources */,
-				093C6B46289AB3D7005B3C06 /* ReactNativeViewController.swift in Sources */,
+				093C6B59289ABD59005B3C06 /* ReactNativeBridgeDelegate.m in Sources */,
+				093C6B54289ABC10005B3C06 /* ReactNativeBridge.m in Sources */,
+				093C6B55289ABC10005B3C06 /* ReactNativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
