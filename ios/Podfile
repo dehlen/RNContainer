@@ -16,15 +16,19 @@ target 'RNContainer' do
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :production => production,
-    :hermes_enabled => flags[:hermes_enabled],
+    :hermes_enabled => true,
+    # :hermes_enabled => flags[:hermes_enabled],
     :fabric_enabled => flags[:fabric_enabled],
-    :flipper_configuration => FlipperConfiguration.enabled,
+    # :flipper_configuration => FlipperConfiguration.enabled,
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
   # Build Tools
-  pod 'xcbeautify'
+  # Currently xcbeautify causes xcodebuild to freeze due to something very similar to this:
+  # https://github.com/tuist/xcbeautify/issues/68
+  # As long as no fixed version is released we won't beautify xcodebuild logs
+  # pod 'xcbeautify'
 
   post_install do |installer|
     react_native_post_install(installer)
