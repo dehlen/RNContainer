@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		099E7215289912AC0062CC2B /* RNContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E7214289912AC0062CC2B /* RNContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		099E72232899180E0062CC2B /* ReactNativeBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721B2899180E0062CC2B /* ReactNativeBridge.h */; };
-		099E72242899180E0062CC2B /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721C2899180E0062CC2B /* ReactNativeViewController.h */; };
+		099E72232899180E0062CC2B /* ReactNativeBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721B2899180E0062CC2B /* ReactNativeBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		099E72242899180E0062CC2B /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721C2899180E0062CC2B /* ReactNativeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		099E72262899180E0062CC2B /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721E2899180E0062CC2B /* ReactNativeViewController.m */; };
 		099E72272899180E0062CC2B /* ReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721F2899180E0062CC2B /* ReactNativeBridge.m */; };
 		D6F58AAA71DC43ECF73A860A /* libPods-RNContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */; };
