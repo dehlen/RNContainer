@@ -12,6 +12,7 @@
 		099E72242899180E0062CC2B /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 099E721C2899180E0062CC2B /* ReactNativeViewController.h */; };
 		099E72262899180E0062CC2B /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721E2899180E0062CC2B /* ReactNativeViewController.m */; };
 		099E72272899180E0062CC2B /* ReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E721F2899180E0062CC2B /* ReactNativeBridge.m */; };
+		354097281E9B8EF173922E30 /* MiniApp.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 696E67C70BB8E67B6DFF3272 /* MiniApp.jsbundle */; };
 		D6F58AAA71DC43ECF73A860A /* libPods-RNContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-RNContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer.release.xcconfig"; path = "Target Support Files/Pods-RNContainer/Pods-RNContainer.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNContainer-RNContainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer-RNContainerTests.debug.xcconfig"; path = "Target Support Files/Pods-RNContainer-RNContainerTests/Pods-RNContainer-RNContainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNContainer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		696E67C70BB8E67B6DFF3272 /* MiniApp.jsbundle */ = {isa = PBXFileReference; name = MiniApp.jsbundle; path = ../../../../Desktop/MiniApp.jsbundle; sourceTree = SOURCE_ROOT; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNContainer-RNContainerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer-RNContainerTests.release.xcconfig"; path = "Target Support Files/Pods-RNContainer-RNContainerTests/Pods-RNContainer-RNContainerTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				696E67C70BB8E67B6DFF3272 /* MiniApp.jsbundle */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354097281E9B8EF173922E30 /* MiniApp.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +213,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RNContainer/Pods-RNContainer-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RNContainer/Pods-RNContainer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
