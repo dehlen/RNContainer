@@ -7,7 +7,6 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property (nonatomic, copy) NSString *entryFile;
-@property (nonatomic, copy) NSString *bundlePath;
 
 +(ReactNativeBridge*)shared;
 

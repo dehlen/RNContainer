@@ -33,7 +33,6 @@
 @implementation ReactNativeBridge
 
 @synthesize entryFile = _entryFile;
-@synthesize bundlePath = _bundlePath;
 @synthesize bridge;
 
 + (ReactNativeBridge*)shared {
@@ -50,7 +49,6 @@
 - (id)init {
     if (self = [super init]) {
         _entryFile = @"index";
-        _bundlePath = @"main.jsbundle";
     }
     return self;
 }
@@ -86,20 +84,14 @@
 
 - (NSURL *)sourceURL {
     #if DEBUG
-      return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:_entryFile fallbackExtension:nil];
+    NSURL *url = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:_entryFile fallbackExtension:nil];
+    if (!url) {
+        return [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false"];
+    } else {
+        return url;
+    }
     #else
-        NSArray<NSString *> *resourceURLComponents = [_bundlePath componentsSeparatedByString:@"."];
-        NSRange withoutLast;
-    
-        withoutLast.location = 0;
-        withoutLast.length = [resourceURLComponents count] - 2;
-    
-        NSArray<NSString *> *resourceURLComponentsWithoutExtension = [resourceURLComponents subarrayWithRange:withoutLast];
-    
-        return [[NSBundle mainBundle]
-                    URLForResource:[resourceURLComponentsWithoutExtension componentsJoinedByString:@""]
-                    withExtension:resourceURLComponents[resourceURLComponents.count - 1]
-               ];
+        return [[NSBundle bundleForClass:[ReactNativeBridge class]] URLForResource:@"main" withExtension:@"jsbundle"];
     #endif
 }
 
