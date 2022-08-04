@@ -83,16 +83,31 @@
 }
 
 - (NSURL *)sourceURL {
-    #if DEBUG
-    NSURL *url = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:_entryFile fallbackExtension:nil];
+    NSURL *url = [[self allJSBundleFiles]firstObject];
+    NSLog(@"Found JS Bundle file: %@", url);
     if (!url) {
-        return [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false"];
+      return [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false"];
     } else {
-        return url;
+      return url;
     }
-    #else
-        return [[NSBundle bundleForClass:[ReactNativeBridge class]] URLForResource:@"main" withExtension:@"jsbundle"];
-    #endif
+}
+
+- (NSArray *)allJSBundleFiles {
+    NSArray *returnFiles = nil;
+    NSURL *bundle = [[NSBundle bundleForClass:self.class] bundleURL];
+    NSError *error = nil;
+
+    NSArray *files =
+    [[NSFileManager defaultManager] contentsOfDirectoryAtURL:bundle
+                                  includingPropertiesForKeys:nil
+                                                     options:NSDirectoryEnumerationSkipsHiddenFiles
+                                                       error:&error];
+    if (!error) {
+        NSPredicate *jsBundlePredicate = [NSPredicate predicateWithFormat:@"pathExtension='jsbundle'"];
+        returnFiles = [files filteredArrayUsingPredicate:jsBundlePredicate];
+    }
+
+    return returnFiles;
 }
 
 - (UIView *)rootViewWithName:(NSString *)name properties:(NSDictionary *)properties {
