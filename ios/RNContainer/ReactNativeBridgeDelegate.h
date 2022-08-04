@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ReactNativeBridgeDelegate : NSObject <RCTBridgeDelegate>
-@property (nonatomic, strong) NSURL *jsBundleURL;
 
 - (instancetype)initWithModuleURL:(NSURL *)url;
 NS_ASSUME_NONNULL_END

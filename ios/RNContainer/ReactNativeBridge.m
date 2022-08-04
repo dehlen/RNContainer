@@ -68,7 +68,6 @@
     
     ReactNativeBridgeDelegate *delegate = [[ReactNativeBridgeDelegate alloc] initWithModuleURL:[self sourceURL]];
     bridge = [[RCTBridge alloc] initWithDelegate:delegate launchOptions:launchOptions];
-    
     if (onBundleLoaded != nil) {
         _onBundleLoaded = [onBundleLoaded copy];
         

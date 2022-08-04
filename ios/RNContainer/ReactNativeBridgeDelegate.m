@@ -9,17 +9,15 @@
 - (instancetype)initWithModuleURL:(NSURL *)url
 {
     self = [super init];
-    if (self)
-    {
+    if (self) {
         self.sourceURL = url;
     }
 
     return self;
 }
 
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-{
-    return self.jsBundleURL;
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge {
+    return self.sourceURL;
 }
 
 @end
