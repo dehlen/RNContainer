@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093C6B48289AB54C005B3C06 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 093C6B47289AB549005B3C06 /* main.jsbundle */; };
 		093C6B53289ABC10005B3C06 /* ReactNativeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 093C6B4F289ABC10005B3C06 /* ReactNativeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		093C6B54289ABC10005B3C06 /* ReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B50289ABC10005B3C06 /* ReactNativeBridge.m */; };
 		093C6B55289ABC10005B3C06 /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C6B51289ABC10005B3C06 /* ReactNativeViewController.m */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		093C6B47289AB549005B3C06 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.jsbundle; sourceTree = "<group>"; };
 		093C6B4F289ABC10005B3C06 /* ReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
 		093C6B50289ABC10005B3C06 /* ReactNativeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeBridge.m; sourceTree = "<group>"; };
 		093C6B51289ABC10005B3C06 /* ReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
@@ -33,7 +31,6 @@
 		099E722C28991A550062CC2B /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		099E722D28991A550062CC2B /* RNContainer-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "RNContainer-Release.xcconfig"; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNContainer-RNContainerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNContainer-RNContainerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-RNContainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer.debug.xcconfig"; path = "Target Support Files/Pods-RNContainer/Pods-RNContainer.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-RNContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer.release.xcconfig"; path = "Target Support Files/Pods-RNContainer/Pods-RNContainer.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNContainer-RNContainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNContainer-RNContainerTests.debug.xcconfig"; path = "Target Support Files/Pods-RNContainer-RNContainerTests/Pods-RNContainer-RNContainerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +82,6 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNContainer.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNContainer-RNContainerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,7 +96,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				093C6B47289AB549005B3C06 /* main.jsbundle */,
 				099E722928991A550062CC2B /* Config */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				099E7213289912AC0062CC2B /* RNContainer */,
@@ -206,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093C6B48289AB54C005B3C06 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
